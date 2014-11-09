@@ -1,12 +1,12 @@
 {
   "name": "lemonade_kit",
-  "version": "0.9.4",
+  "version": "0.10",
   "homepage": "https://github.com/oneeyedman/Lemonade_kit/",
   "authors": [
     "Oneeyedman <hola@sidiostedalimones.com>",
     "Hermanos Clever Studio <hola@hermanosclever.com>"
   ],
-  "description": "Our gulp-ready-website-starter-kit based on html5Boilerplate and experience :)",
+  "description": "This is my gulp-ready-compass-free-website-starter-kit based on html5Boilerplate and experience ;)",
   "main": "index.php",
   "keywords": [
     "lemon",
