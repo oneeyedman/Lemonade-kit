@@ -1,20 +1,21 @@
 {
-  "name": "PizzaPlate",
+  "name": "lemonade_kit",
   "version": "0.9.4",
-  "homepage": "https://github.com/HermanosClever/PizzaPlate",
+  "homepage": "https://github.com/oneeyedman/Lemonade_kit/",
   "authors": [
+    "Oneeyedman <hola@sidiostedalimones.com>",
     "Hermanos Clever Studio <hola@hermanosclever.com>"
   ],
   "description": "Our gulp-ready-website-starter-kit based on html5Boilerplate and experience :)",
   "main": "index.php",
   "keywords": [
-    "pizza",
+    "lemon",
+    "lemonade",
     "starter",
     "kit",
     "website",
     "gulp",
-    "murdock",
-    "hermanosclever"
+    "sidiostedalimones"
   ],
   "license": "MIT",
   "ignore": [
