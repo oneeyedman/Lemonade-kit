@@ -1,18 +1,18 @@
 {
-  "name": "pizza-plate",
-  "version": "0.9.4",
-  "description": "Our gulp-ready-website-starter-kit based on html5Boilerplate and experience :)",
+  "name": "lemonade-kit",
+  "version": "0.10.0",
+  "description": "This is my gulp-ready-compass-free-website-starter-kit based on html5Boilerplate and experience ;)",
   "main": "index.php",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HermanosClever/PizzaPlate.git"
+    "url": "https://github.com/oneeyedman/Lemonade-kit.git"
   },
-  "author": "Hermanos Clever Studio <hola@hermanosclever.com>",
+  "author": "Carlos <hola@sidiostedalimones.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HermanosClever/PizzaPlate/issues"
+    "url": "https://github.com/oneeyedman/Lemonade-kit/issues"
   },
-  "homepage": "https://github.com/HermanosClever/PizzaPlate",
+  "homepage": "https://github.com/oneeyedman/Lemonade-kit",
   "dependencies": {
     "gulp": "^3.8.10",
     "gulp-concat": "^2.4.1",

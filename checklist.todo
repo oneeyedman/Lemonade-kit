@@ -1,10 +1,14 @@
+Contents:
+  ☐ Home
+  ☐ Pages
+
 Layout:
  ☐ Header
  ☐ Footer
- ☐ Menu
- ☐ Contents
+ ☐ Main containers
 
 Deploy:
+ ☐ IE8 Ready?
  ☐ Remove Snitch
  ☐ Analytics
  ☐ Build production version "$ gulp deploy"

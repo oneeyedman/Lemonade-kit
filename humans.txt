@@ -10,39 +10,3 @@
 
 /* SITE */
 
-
-
-NN.    /Nd   hNNNNNNNN. .NNNNNNNh/   +NN-     `dNd      yNh      hNd.    +Nh   `odNNNmy:   .smNNNNh/
-MM-    /Md   hMo``````  .NN.```-dM+  +MMN-   `hMMd     +MNMo     hMMN/   +Mh  `dMs. `:mM/ `mM+`  ./`
-MM-````+Md   hMo`````   .NN.   .dMo  +MmNN-  yMmMd    -NN.dM:    hMhmMs` +Mh  -MN`    oMh `mMs-``
-MMNmmmmNMd   hMNmmmmm.  .NMNNNNMd+   +Mh:Nm.yMs/Md   `mM: -Nm.   hMs`yMd.+Mh  :Mm`    +Mh  `ohmNNNh/
-MM-    /Md   hM+        .NN.`.dMs    +Mh :NNMs /Md   yMm+++dMh   hMs  +NNhMh  -MN`    oMh        -mM
-MM-    /Md   hMo``````  .NN.  `dMy   +Mh  :yo  /Md  /MmooooodMo  hMs   -mMMh   dMy-``/NM: `oo-` ./NM
-mm.    :mh   ymmmmmmmm. .mm.   `hmo  +my       :mh .mm-     .mm- ymo    `ymy    /hmNNds.  `+hmNNmds-
-
-
-  `/ydmNNmho.   ymmmd-          /mmmmmmmmmmmmd/ hmmmd:     +mmmmy `dmmmmmmmmmmmmh`  smmmmmmmmdhs:
- oNMMMMMMMMMy`  dMMMM:          +MMMMMMMMMMMMM+ /MMMMm`   .NMMMM- `NMMMMMMMMMMMMm`  hMMMMMMMMMMMMm:
-sMMMMmo//yy-    dMMMM:          +MMMMd////////.  yMMMMo   yMMMMo  `NMMMM+////////   hMMMMy+++yMMMMN.
-NMMMM-          dMMMM:          +MMMMy           `mMMMN. :MMMMd   `NMMMM`           hMMMM/    dMMMM/
-MMMMN`          dMMMM:          +MMMMMMMMMMMM.    :MMMMh`dMMMN-   `NMMMMMMMMMMMo    hMMMMhssymMMMMm`
-MMMMN`          dMMMM:          +MMMMMMMMMMMM-     yMMMMhMMMMo    `NMMMMMMMMMMMs    hMMMMMMMMMMMNs`
-MMMMM.          dMMMM:          +MMMMh:::::::`     `NMMMMMMMd     `NMMMM/::::::.    hMMMMhomMMMMs
-hMMMMy`  :-     dMMMM:          +MMMMy              /MMMMMMM.     `NMMMM`           hMMMM/ .NMMMMs
-.mMMMMMNMMMh-   dMMMMMMMMMMMMh  +MMMMMMMMMMMMM+      yMMMMMo      `NMMMMMMMMMMMMm`  hMMMM/  -NMMMMy
- `+dMMMMMMMNs`  dMMMMMMMMMMMMh  +MMMMMMMMMMMMM+      `mMMMd       `NMMMMMMMMMMMMm`  hMMMM/   -NMMMMy
-    `-:::-.     -::::::::::::-  .:::::::::::::.       .:::`        -::::::::::::-   -::::`    .:::::
-
-
-
-yNms-                            ./oyhdmmdhyo:.      `-+shdmmmdhs+-                            `+hNm
-MMMMMd+`                      .omMMMMMMMMMMMMMMdo//ohMMMMMMMMMMMMMMNy:                       :yMMMMM
-mMMMMMMMy/`                 `sMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd-                  -smMMMMMMM
-+MMMMMMMMMNh+.            :yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd/`           `:smMMMMMMMMMd
- yMMMMMMMMMMMMNhs+/:::/ohNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMds+/:::/oymMMMMMMMMMMMMm.
-  sMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd.
-   /NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs`
-    `oNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh-
-      `+dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNddmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms.
-         `/ymMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmdy+:.    `:+shmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMNho-
-             `-/oyhdmNNMMMMMMNNmddhyo+/-.`                 `-:+osyhdmNNMMMMMMMNmmhys+:.

@@ -11,7 +11,7 @@
 		-->
 
 		<meta name="application-name" content="Your web/app name" />
-		<meta name="msapplication-TileColor" content="#222" />
+		<meta name="msapplication-TileColor" content="#ECECEC" />
 		<meta name="msapplication-TileImage" content="/w8-tile.png" />
 		<meta name="msapplication-tooltip" content="My super-cool tooltip" />
 

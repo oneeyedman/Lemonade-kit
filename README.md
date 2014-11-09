@@ -1,6 +1,6 @@
-# &lt;PizzaPlate /&gt;
+# Lemonade Kit
 
-Our gulp-ready-website-starter-kit based on html5Boilerplate and experience :)
+This is my gulp-ready-compass-free-website-starter-kit based on html5Boilerplate and experience ;)
 
 <!-- MarkdownTOC depth=2 -->
 
@@ -12,21 +12,18 @@ Our gulp-ready-website-starter-kit based on html5Boilerplate and experience :)
 <!-- /MarkdownTOC -->
 
 ## Gulp dependencies
-* **gulp**: ver. ~3.8.5
-* **gulp-concat**: ver. ~2.2.0
-* **gulp-livereload**: ver. ~2.1.0
-* **gulp-minify-css**: ver. ~0.3.7
-* **gulp-notify**: ver. ~1.4.0
-* **gulp-plumber**: ver. ~0.6.4
-* **gulp-rename**: ver. ~1.2.0
-* **gulp-ruby-sass**: ver. ~0.7.1
-* **gulp-sass**: ver. ~0.7.2
-* **gulp-uglify**: ver. ~0.3.1
-* **gulp-util**: ver. ~3.0.0
+* **gulp**: ver. ~3.8.10
+* **gulp-concat**: ver. ~2.4.1
+* **gulp-minify-css**: ver. ~0.3.11
+* **gulp-notify**: ver. ~2.0.1
+* **gulp-plumber**: ver. ~0.6.6
+* **gulp-ruby-sass**: Master branch
+* **gulp-uglify**: ver. ~1.0.1
+* **gulp-util**: ver. ~3.0.1
 
 ## Gulp tasks
 ### Deploy
-`$ gulp deploy` creates a production ready version inside a folder **_DATE(YYMMDD)-PROJECT-TIME(HHMM)**
+`$ gulp deploy` copies a "production ready" version inside a folder **_DATE(YYMMDD)-PROJECT-TIME(HHMM)**
 
 		ex: _140827-my-project-1139
 

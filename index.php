@@ -6,7 +6,7 @@ $lang = 'es';
 <?php include 'incl/_cc.inc'; ?>
 	<head>
 		<meta charset="utf-8" />
-		<title>&lt;PizzaPlate /&gt; by Hermanos Clever Studio</title>
+		<title>Lemonade kit by Sidiostedalimones</title>
 		<meta name="description" content="" />
 		<?php include 'incl/_head.inc'; ?>
 	</head>

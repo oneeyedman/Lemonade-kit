@@ -126,9 +126,9 @@ textarea {
   z-index: 666;
 }
 
-div#aviso-cookies {
+div#cookie_alert {
   display: none;
 }
-div#aviso-cookies.mostrado {
+div#cookie_alert.shown {
   display: block;
 }
