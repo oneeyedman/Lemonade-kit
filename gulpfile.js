@@ -7,7 +7,8 @@ var gulp = require( 'gulp' ),
 		notify     = require('gulp-notify'),
 		plumber    = require('gulp-plumber'),
 		gutil      = require('gulp-util'),
-		livereload = require('gulp-livereload');
+		livereload = require('gulp-livereload'),
+		replace = require('gulp-replace');
 
 var project_folder = 'my_project';
 var onError = function (err) {
@@ -17,6 +18,7 @@ var onError = function (err) {
 
 gulp.task( 'scss_styles' , function(cb) {
 	return gulp.src('_dev/scss/*.scss')
+		.pipe(replace(/!hosita(\s{1}tupa)?/g, '!important'))
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		.pipe(sass({ 'sourcemap=none': true, style: 'expanded'}))
 		.pipe(gulp.dest( 'css/'))

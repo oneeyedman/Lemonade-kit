@@ -19,6 +19,9 @@ $debugMode:false;
 //	$1 Layout
 @include snitch();
 
+body {background:red !hosita tupa;}
+body {background: blue;}
+body {background: green !hosita;}
 
 div#cookie_alert {
 	display: none;

@@ -126,6 +126,18 @@ textarea {
   z-index: 666;
 }
 
+body {
+  background: red !important;
+}
+
+body {
+  background: blue;
+}
+
+body {
+  background: green !important;
+}
+
 div#cookie_alert {
   display: none;
 }
