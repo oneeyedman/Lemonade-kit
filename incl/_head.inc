@@ -19,7 +19,7 @@
 
 		<?php include 'incl/_webfonts.inc'; ?>
 		<link rel="stylesheet" href="css/normalize.min.css" />
-		<link rel="stylesheet" href="css/main.min.css" />
+		<link rel="stylesheet" href="css/main.min.css?rel=1422121097335" />
 		<!-- <link rel="stylesheet" href="css/shame.css" /> -->
 		<!-- <link rel="stylesheet" href="css/client.css" /> -->
 

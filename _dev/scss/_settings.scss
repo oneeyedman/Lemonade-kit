@@ -9,8 +9,8 @@ $c_link: #057;
 $c_alert:#dd3519;
 
 // dimensions
-$m_sitewidth: 1000;
-$m_radius:5px;
+$d_sitewidth: 1000;
+$d_radius:5px;
 
 // Fonts
 $f_base: arial, sans-serif;
@@ -22,9 +22,8 @@ $f_line_height: 130%;
 $base_time_transition: .5s;
 
 // Paths
-$theme: 'layout/2014/';
+$theme: 'layout/2015/';
 
 // Levels
-$z_bg:1;
-$z_menu:2;
+$z_index: background, menu, content;
 

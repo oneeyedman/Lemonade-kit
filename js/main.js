@@ -1,5 +1,4 @@
 var COOKIES = {
-
 	ga_id : null,
 	ga_code : null,
 	ga_container : null,
@@ -26,7 +25,6 @@ var COOKIES = {
 		COOKIES.lopd = true;
 		COOKIES.ga_container.removeClass('shown').html(COOKIES.ga_code);
 	}
-
 }
 
 
@@ -42,6 +40,7 @@ $(document).ready(function() {
 	// External links
 	$('.legal a, a.ext').attr('target', '_blank');
 
+	// EU Cookie law
 	COOKIES.init();
 
 });

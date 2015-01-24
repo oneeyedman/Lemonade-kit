@@ -7,25 +7,15 @@
 	@return url( #{$path + $image});
 }
 
-@function lh( $fsize, $fline: $fsize ) {
+@function lh( $fline, $fsize: $f_font_size ) {
 	@return #{ $fline * 100% / $fsize};
 }
 
-@function per($pixels, $context: $m_sitewidth) {
+@function per($pixels, $context: $d_sitewidth) {
 	@return #{$pixels * 100%/$context};
 }
 
 // SCSS Mixins
-@mixin box-shadow( $horiz : 0 , $vert : .5em , $blur : 0px , $spread : 0px , $color : #000000 ){
-	box-shadow: $horiz $vert $blur $spread $color;
-}
-
-@mixin box-sizing($type: border-box){
-	-webkit-box-sizing: $type;
-	-moz-box-sizing: $type;
-	box-sizing: $type;
-}
-
 @mixin fontFace($family ,$src , $weight:normal, $style: normal) {
 	@font-face {
 		font-family: $family;
@@ -39,28 +29,11 @@
 	}
 }
 
-@mixin gradient($g_color1, $g_color2, $pos1:0%, $pos2:100%, $dir:top){
-	background-image: -webkit-linear-gradient($dir, $g_color1 $pos1, $g_color2 $pos2);
-	background-image: -moz-linear-gradient($dir, $g_color1 $pos1, $g_color2 $pos2);
-	background-image: -o-linear-gradient($dir, $g_color1 $pos1, $g_color2 $pos2);
-	background-image: -ms-linear-gradient($dir, $g_color1 $pos1, $g_color2 $pos2);
-	background-image: linear-gradient($dir, $g_color1 $pos1, $g_color2 $pos2);
-	background-repeat: no-repeat;
-}
-
 @mixin mq($pixels, $width:min-width){
-	@media screen and ($width:em($pixels) ){
+	@media screen and ( $width: em( $pixels ) ){
 	//@media screen and ($width: #{$pixels}px){
 		@content;
 	}
-}
-
-@mixin opacity($alpha: .5) {
-	filter: alpha(opactiy=($alpha * 100));
-	-ms-filter: "progid:DXImagealphaform.Microsoft.Alpha(Opacity=#{$alpha * 100})";
-	-moz-opacity: $alpha;
-	-khtml-opacity: $alpha;
-	opacity: $alpha;
 }
 
 @mixin snitch(){
@@ -74,11 +47,4 @@
 		top:1em;
 		z-index:666;
 	}
-}
-
-@mixin transition($time: $base_time_transition, $property:all){
-	-webkit-transition: $time $property ease;
-	-moz-transition: $time $property ease;
-	-o-transition: $time $property ease;
-	transition: $time $property ease;
 }
