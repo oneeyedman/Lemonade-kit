@@ -1,6 +1,8 @@
 <?php
-$page = 'home';
-$lang = 'es';
+include 'incl/_settings.inc';
+$template = 'tpl_home';
+$page = 'Home';
+$lang = 'en';
  ?>
 <!DOCTYPE html>
 <?php include 'incl/_cc.inc'; ?>
@@ -10,7 +12,7 @@ $lang = 'es';
 		<meta name="description" content="" />
 		<?php include 'incl/_head.inc'; ?>
 	</head>
-	<body class="<?php echo $page; ?> _dev">
+	<body class="<?php echo $template . '  ' . to_class( $page ); ?><?php if ( $dev ) { echo '  _dev'; } ?>">
 		<div class="page">
 			<?php include 'incl/_header.inc'; ?>
 			<?php include 'incl/_menu.inc'; ?>

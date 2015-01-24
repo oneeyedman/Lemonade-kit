@@ -1,29 +1,35 @@
-var gulp = require( 'gulp' ),
-		sass       = require('gulp-ruby-sass'),
-		cssminifiy = require('gulp-minify-css'),
-		rename     = require('gulp-rename'),
-		concat     = require('gulp-concat'),
-		uglify     = require('gulp-uglify'),
-		notify     = require('gulp-notify'),
-		plumber    = require('gulp-plumber'),
-		gutil      = require('gulp-util'),
-		livereload = require('gulp-livereload'),
-		replace = require('gulp-replace');
+var gulp         = require( 'gulp' ),
+		sass         = require('gulp-ruby-sass'),
+		cssminifiy   = require('gulp-minify-css'),
+		autoprefixer = require('gulp-autoprefixer'),
+		rename       = require('gulp-rename'),
+		concat       = require('gulp-concat'),
+		uglify       = require('gulp-uglify'),
+		notify       = require('gulp-notify'),
+		plumber      = require('gulp-plumber'),
+		gutil        = require('gulp-util'),
+		livereload   = require('gulp-livereload'),
+		replace      = require('gulp-replace'),
+		cachebreaker = require('gulp-cache-break');
 
-var project_folder = 'my_project';
+var deploy_folder = 'dist';
 var onError = function (err) {
-  gutil.beep();
-  console.log(err);
+	gutil.beep();
+	console.log(err);
 };
 
 gulp.task( 'scss_styles' , function(cb) {
 	return gulp.src('_dev/scss/*.scss')
 		.pipe(replace(/!hosita(\s{1}tupa)?/g, '!important'))
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-		.pipe(sass({ 'sourcemap=none': true, style: 'expanded'}))
+		.pipe(sass({ sourcemap: 'none', style: 'expanded'}))
+		.pipe(autoprefixer({
+			browsers: ['last 3 versions'],
+			cascade: false
+		}))
 		.pipe(gulp.dest( 'css/'))
 		.pipe(notify({message: 'CSS OK'}))
-    .pipe(cssminifiy())
+		.pipe(cssminifiy())
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest( 'css/' ) );
 });
@@ -46,16 +52,7 @@ gulp.task('js_scripts', function(){
 		.pipe( notify({message: 'JS OK'}));
 });
 
-
 gulp.task('deploy', function(){
-	var now = new Date(),
-	time = '' + now.getHours() + now.getMinutes(),
-	month = (now.getMonth()+1),
-	date;
-	if (month < 10) { month = '0' + month; }
-	date = '' + now.getFullYear() + month + now.getDate();
-	date = date.replace('2014','14');
-
 	gulp.src([
 		'*.*',
 		'*/**',
@@ -67,17 +64,33 @@ gulp.task('deploy', function(){
 		'!gulpfile.js',
 		'!package.json',
 		'!bower.json',
-		'!readme.md'
+		'!readme.md',
+		'.htaccess',
+		'!_' + deploy_folder,
+		'!_' + deploy_folder + '/**',
+
 		])
-		.pipe( gulp.dest( '_' + date + '-' + project_folder + '-' + time + '/') );
+		.pipe( gulp.dest( '_' + deploy_folder + '/') );
 });
 
+gulp.task('cache_css', function(callback){
+		gulp.src('incl/_head.inc')
+				.pipe(cachebreaker('css/main.min.css'))
+				.pipe(gulp.dest('incl'));
+});
+
+gulp.task('cache_js', function(callback){
+	 gulp.src('incl/_js.inc')
+				.pipe(cachebreaker('js/main.min.js'))
+				.pipe(cachebreaker('js/plugins.js'))
+				.pipe(gulp.dest('incl'));
+});
 
 gulp.task('watch', function(){
 	livereload.listen();
-	gulp.watch('_dev/js/plugins/*.js', ['js_plugins']).on('change', livereload.changed);
-	gulp.watch('_dev/js/*.js', ['js_scripts']).on('change', livereload.changed);
-	gulp.watch('_dev/scss/*.scss', ['scss_styles']);
+	gulp.watch('_dev/js/plugins/*.js', ['js_plugins','cache_js']).on('change', livereload.changed);
+	gulp.watch('_dev/js/*.js', ['js_scripts','cache_js']).on('change', livereload.changed);
+	gulp.watch('_dev/scss/*.scss', ['scss_styles','cache_css']);
 	gulp.watch('css/*.css').on('change', livereload.changed);
 	gulp.watch(['*.php','*.html','incl/*.inc']).on('change', livereload.changed);
 });

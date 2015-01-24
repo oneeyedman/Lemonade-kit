@@ -13,8 +13,12 @@ $debugMode:false;
 //		$1.1 Header
 //		$1.2 Footer
 //
-//	$2 CONTENT
+//	$X EU COOKIE LAW
 //
+
+
+
+
 
 //	$1 Layout
 @include snitch();
@@ -23,6 +27,10 @@ body {background:red !hosita tupa;}
 body {background: blue;}
 body {background: green !hosita;}
 
+
+
+
+//	$X EU COOKIE LAW
 div#cookie_alert {
 	display: none;
 	&.shown {

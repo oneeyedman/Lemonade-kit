@@ -12,20 +12,24 @@ This is my gulp-ready-compass-free-website-starter-kit based on html5Boilerplate
 <!-- /MarkdownTOC -->
 
 ## Gulp dependencies
-* **gulp**: ver. ~3.8.10
-* **gulp-concat**: ver. ~2.4.1
-* **gulp-minify-css**: ver. ~0.3.11
-* **gulp-notify**: ver. ~2.0.1
-* **gulp-plumber**: ver. ~0.6.6
-* **gulp-ruby-sass**: Master branch
-* **gulp-uglify**: ver. ~1.0.1
-* **gulp-util**: ver. ~3.0.1
+* **del**: "~1.1.0"
+* **gulp**: "~3.8.10"
+* **gulp-autoprefixer**: "~2.1.0"
+* **gulp-cache-break**: "git://github.com/benjamin-smith/gulp-cache-break.git"
+* **gulp-concat**: "~2.4.3"
+* **gulp-livereload**: "~3.5.0"
+* **gulp-minify-css**: "~0.4.2"
+* **gulp-notify**: "~2.1.0"
+* **gulp-plumber**: "~0.6.6"
+* **gulp-rename**: "~1.2.0"
+* **gulp-replace**: "~0.5.2"
+* **gulp-ruby-sass**: "git://github.com/sindresorhus/gulp-ruby-sass.git"
+* **gulp-uglify**: "1.1.0"
+* **gulp-util**: "~3.0.2"
 
 ## Gulp tasks
 ### Deploy
-`$ gulp deploy` copies a "production ready" version inside a folder **_DATE(YYMMDD)-PROJECT-TIME(HHMM)**
-
-		ex: _140827-my-project-1139
+`$ gulp deploy` copies a "production ready" version inside a folder **_dist**
 
 This "production version" excludes the following files/folders:
 * _dev/\*.\*
