@@ -1,6 +1,6 @@
 {
 	"name": "lemonade-kit",
-	"version": "0.10.0",
+	"version": "0.11.1",
 	"description": "This is my gulp-ready-compass-free-website-starter-kit based on html5Boilerplate and experience ;)",
 	"main": "index.php",
 	"repository": {
