@@ -74,13 +74,13 @@ gulp.task('deploy', function(){
 });
 
 gulp.task('cache_css', function(callback){
-		gulp.src('incl/_head.inc')
+		gulp.src('incl/_head.php')
 				.pipe(cachebreaker('css/main.min.css'))
 				.pipe(gulp.dest('incl'));
 });
 
 gulp.task('cache_js', function(callback){
-	 gulp.src('incl/_js.inc')
+	 gulp.src('incl/_js.php')
 				.pipe(cachebreaker('js/main.min.js'))
 				.pipe(cachebreaker('js/plugins.js'))
 				.pipe(gulp.dest('incl'));
@@ -92,7 +92,7 @@ gulp.task('watch', function(){
 	gulp.watch('_dev/js/*.js', ['js_scripts','cache_js']).on('change', livereload.changed);
 	gulp.watch('_dev/scss/*.scss', ['scss_styles','cache_css']);
 	gulp.watch('css/*.css').on('change', livereload.changed);
-	gulp.watch(['*.php','*.html','incl/*.inc']).on('change', livereload.changed);
+	gulp.watch(['*.php','*.html','incl/*.php']).on('change', livereload.changed);
 });
 
 gulp.task('default', ['watch']);

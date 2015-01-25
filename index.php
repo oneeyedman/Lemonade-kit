@@ -1,21 +1,21 @@
 <?php
-include 'incl/_settings.inc';
+include 'incl/_settings.php';
 $template = 'tpl_home';
 $page = 'Home';
 $lang = 'en';
  ?>
 <!DOCTYPE html>
-<?php include 'incl/_cc.inc'; ?>
+<?php include 'incl/_cc.php'; ?>
 	<head>
 		<meta charset="utf-8" />
 		<title>Lemonade kit by Sidiostedalimones</title>
 		<meta name="description" content="" />
-		<?php include 'incl/_head.inc'; ?>
+		<?php include 'incl/_head.php'; ?>
 	</head>
 	<body class="<?php echo $template . '  ' . to_class( $page ); ?><?php if ( $dev ) { echo '  _dev'; } ?>">
 		<div class="page">
-			<?php include 'incl/_header.inc'; ?>
-			<?php include 'incl/_menu.inc'; ?>
+			<?php include 'incl/_header.php'; ?>
+			<?php include 'incl/_menu.php'; ?>
 
 			<!-- Main content -->
 			<main id="main" role="main">
@@ -24,11 +24,11 @@ $lang = 'en';
 				</div>
 			</main>
 
-			<?php include 'incl/_footer.inc'; ?>
+			<?php include 'incl/_footer.php'; ?>
 
 		</div>
-		<?php include 'incl/_js.inc'; ?>
-		<?php include 'incl/_tag.inc'; ?>
+		<?php include 'incl/_js.php'; ?>
+		<?php include 'incl/_tag.php'; ?>
 
 	</body>
 </html>
