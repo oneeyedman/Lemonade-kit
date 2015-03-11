@@ -22,13 +22,19 @@ $debugMode:false;
 
 //	$1 Layout
 @include snitch();
-
+.wrapper {
+	margin: 0 em( 30 );
+	@include mq( $d_sitewidth + (30 * 2) ) {
+		max-width: em( $d_sitewidth );
+		margin: 0 auto;
+	}
+}
 
 
 
 
 //	$X EU COOKIE LAW
-div#cookie_alert {
+#cookie_alert {
 	display: none;
 	&.shown {
 		display: block;

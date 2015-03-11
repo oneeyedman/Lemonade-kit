@@ -26,6 +26,7 @@ This is my gulp-ready-compass-free-website-starter-kit based on html5Boilerplate
 * **gulp-ruby-sass**: "git://github.com/sindresorhus/gulp-ruby-sass.git"
 * **gulp-uglify**: "1.1.0"
 * **gulp-util**: "~3.0.2"
+* **gulp-combine-mq**: "~0.3.1"
 
 ## Gulp tasks
 ### Deploy
