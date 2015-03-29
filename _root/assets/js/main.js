@@ -8,7 +8,7 @@ var COOKIES = {
 		COOKIES.ga_id = 'UA-XXXXXXX-XX';
 		COOKIES.ga_code = "<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', '" + COOKIES.ga_id + "' , 'yoursite.com');ga('send', 'pageview');</script>";
 		COOKIES.ga_container = $('#cookie_alert');
-		console.log('COOKIES (Y,N): ' + $.cookie('lopd'));
+		//console.log('COOKIES (Y,N): ' + $.cookie('lopd'));
 		if ($.cookie('lopd')) {
 			COOKIES.accepted();
 		} else {
@@ -25,11 +25,9 @@ var COOKIES = {
 		COOKIES.lopd = true;
 		COOKIES.ga_container.removeClass('shown').html(COOKIES.ga_code);
 	}
-}
+};
 
-
-$(document).ready(function() {
-
+jQuery(document).ready(function($) {
 	// Responsive snitch
 	if ( $('body').hasClass('_dev') ) {
 		$('body').width_snitch({
