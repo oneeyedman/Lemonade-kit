@@ -110,6 +110,10 @@ textarea {
   z-index: 666;
 }
 
+body {
+  background: red;
+}
+
 .wrapper {
   margin: 0 1.875em;
 }

@@ -22,6 +22,7 @@ $debugMode:false;
 
 //	$1 Layout
 @include snitch();
+body {background: red}
 .wrapper {
 	margin: 0 em( 30 );
 	@include mq( $d_sitewidth + (30 * 2) ) {

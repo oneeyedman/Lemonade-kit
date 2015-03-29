@@ -10,7 +10,7 @@ var gulp         = require( 'gulp' ),
 		gutil        = require('gulp-util'),
 		livereload   = require('gulp-livereload'),
 		replace      = require('gulp-replace'),
-		cachebreaker = require('gulp-cache-break'),
+		cachebreak   = require('gulp-cache-break'),
 		combineMq    = require('gulp-combine-mq');
 
 var deploy_folder = 'dist';
@@ -20,20 +20,19 @@ var onError = function (err) {
 };
 
 gulp.task( 'scss_styles' , function(cb) {
-	return gulp.src('_dev/scss/*.scss')
+	return sass('_dev/scss')
 		.pipe(replace(/!hosita(\s{1}tupa)?/g, '!important'))
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-		.pipe(sass({ sourcemap: 'none', style: 'expanded'}))
 		.pipe(autoprefixer({
 			browsers: ['last 3 versions'],
 			cascade: false
 		}))
 		.pipe(combineMq())
-		.pipe(gulp.dest( 'css/'))
+		.pipe(gulp.dest( 'css'))
 		.pipe(notify({message: 'CSS OK'}))
 		.pipe(cssminifiy())
 		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest( 'css/' ) );
+		.pipe(gulp.dest( 'css' ) );
 });
 
 gulp.task('js_plugins', function(){
@@ -77,22 +76,22 @@ gulp.task('deploy', function(){
 
 gulp.task('cache_css', function(callback){
 		gulp.src('incl/_head.inc')
-				.pipe(cachebreaker('css/main.min.css'))
+				.pipe(cachebreak('/css/main.min.css'))
 				.pipe(gulp.dest('incl'));
 });
 
 gulp.task('cache_js', function(callback){
-	 gulp.src('incl/_js.inc')
-				.pipe(cachebreaker('js/main.min.js'))
-				.pipe(cachebreaker('js/plugins.js'))
+	 gulp.src('/incl/_js.inc')
+				.pipe(cachebreak('js/main.min.js'))
+				.pipe(cachebreak('js/plugins.js'))
 				.pipe(gulp.dest('incl'));
 });
 
 gulp.task('watch', function(){
 	livereload.listen();
-	gulp.watch('_dev/js/plugins/*.js', ['js_plugins','cache_js']).on('change', livereload.changed);
-	gulp.watch('_dev/js/*.js', ['js_scripts','cache_js']).on('change', livereload.changed);
-	gulp.watch('_dev/scss/*.scss', ['scss_styles','cache_css']);
+	gulp.watch('_dev/js/plugins/*.js', ['js_plugins']).on('change', livereload.changed);
+	gulp.watch('_dev/js/*.js', ['js_scripts']).on('change', livereload.changed);
+	gulp.watch('_dev/scss/*.scss', ['scss_styles']);
 	gulp.watch('css/*.css').on('change', livereload.changed);
 	gulp.watch(['*.php','*.html','incl/*.inc']).on('change', livereload.changed);
 });
